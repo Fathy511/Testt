@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reasons I Love You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts"></div>
+
+  <main class="container">
+    <div class="badge">26/3/2026 • The first day we met</div>
+
+    <section id="intro" class="screen active">
+      <div class="heart-logo">♥</div>
+      <p class="small">I have a few things to tell you...</p>
+      <h1>Reasons I<br><span>Love You</span></h1>
+      <p class="subtitle">Tap the button and discover them one by one ❤️</p>
+      <button id="startBtn" class="main-btn">START ❤️</button>
+    </section>
+
+    <section id="reasons" class="screen">
+      <div class="counter"><span id="number">1</span> / <span id="total">12</span></div>
+      <div class="card-wrap">
+        <div class="card" id="reasonCard">
+          <div class="card-heart">♡</div>
+          <p class="reason-label">REASON #<span id="reasonNumber">1</span></p>
+          <h2 id="reasonText">Your smile can make my whole day better.</h2>
+          <div class="line"></div>
+          <p class="tap">Tap the heart for the next one</p>
+          <button id="nextBtn" class="heart-btn" aria-label="Next reason">♥</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="final" class="screen">
+      <div class="final-heart">♥</div>
+      <p class="small">And after all these reasons...</p>
+      <h1>I'd still<br><span>choose you.</span></h1>
+      <p class="final-text">Because the list could never be long enough. ❤️</p>
+      <p class="date">26 / 03 / 2026</p>
+      <button id="replayBtn" class="main-btn">READ AGAIN ↻</button>
+    </section>
+  </main>
+
+  <div class="music">
+    <button id="musicBtn" aria-label="Play music">♫</button>
+    <span id="musicText">Play our song</span>
+    <audio id="song" loop preload="metadata">
+      <source src="kalma.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
